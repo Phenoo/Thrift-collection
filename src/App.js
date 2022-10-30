@@ -5,10 +5,30 @@ import Navigation from './components/Navigation';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Main from './pages/Main';
-import Subscribe from './components/Subscribe';
+import { useEffect } from 'react';
+
+import scrollreveal from 'scrollreveal'
+
 
 
 function App() {
+  useEffect(() => {
+    const sr = scrollreveal({
+      origin: "bottom",
+      distance: "80px",
+      duration: 2000,
+      reset: true
+    });
+    sr.reveal(
+      `
+      section,
+      `,
+      {
+        opacity: 0,
+        interval: 300
+      }
+    )
+  })
 
   return (
     <>
@@ -18,7 +38,6 @@ function App() {
         <Route path='blog' element={<Blog />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
-      <Subscribe />
       <Footer />
     </>
   );

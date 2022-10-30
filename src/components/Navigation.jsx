@@ -20,10 +20,7 @@ const Navigation = () => {
     }
     window.addEventListener('scroll', windowScroll);
   })
-
- 
-
-
+  
   return (
     <nav className={`${fixed}`}>
       <header>
@@ -37,15 +34,8 @@ const Navigation = () => {
             </div>
             <ul onClick={() => setNavbar(!navbar)} className='navanimate'>
               <li>
-              <li>
                 <Link to='/'>
                   home
-                </Link>
-              </li>
-              </li>
-              <li>
-                <Link to='/'>
-                  shop
                 </Link>
               </li>
               <li>

@@ -1,5 +1,6 @@
 import React from 'react'
-import Img1 from '../assets/logo.webp'
+import Img1 from '../assets/handshake.jpeg'
+import Img2 from '../assets/homebg.jpeg'
 
 import {FaArrowRight} from 'react-icons/fa'
 
@@ -14,7 +15,9 @@ const Blog = () => {
         <p className='aboutp'>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe fuga mollitia possimus soluta vero eum sunt praesentium voluptatem pariatur dicta.
         </p>
-        <img src={Img1} alt="about" />
+        <section>
+          <img src={Img2} alt="about" className="about-img" />
+        </section>
       </section>
       </div>
       <div className="about">

@@ -1,6 +1,6 @@
 import React from 'react'
 import {FaLinkedin, FaTwitter, FaFacebook} from 'react-icons/fa'
-
+import Img from '../assets/shake.jpeg'
 const Contact = () => {
   return (
     <section id="request" className="request">
@@ -21,7 +21,7 @@ const Contact = () => {
               <FaFacebook />
             </li>
           </ul>
-          {/* <img src={Img1} alt="lot" /> */}
+          <img src={Img} alt="lot" />
         </div>
         <form>
           <div className="form-input">

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Silkscreen&family=Josefin+Sans&family=Jost&family=Roboto&family=Montserrat&family=Open+Sans&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Silkscreen&family=DM+Sans&family=Jost&family=Roboto&family=Montserrat&family=Open+Sans&family=Poppins&display=swap');
 //////////////////PARAMETERS////////////////////////////////
 $blue-color: #ff2222;
 $darkblue: #00008b;
@@ -38,9 +38,16 @@ p {
 }
 
 h1,
+h2 {
+    font-family: "DM Sans";
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+h3,
 h6,
 h4 {
-    font-family: "Jost";
+    font-family: "Outfit";
     font-weight: 500;
     text-transform: capitalize;
 }
@@ -76,7 +83,6 @@ nav {
     width: 100vw;
     height: 3rem;
     z-index: 10;
-    box-shadow: 0px 4px 15px rgb(0 0 0 / 8%);
 }
 
 .header {
@@ -155,7 +161,7 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
     gap: 2rem;
-    padding-top: 5rem;
+    padding-top: 7rem;
     width: 100%;
     min-height: 80vh;
     .headline-trans {
@@ -170,7 +176,6 @@ nav {
         }
     }
     h2 {
-        font-family: "Jost";
         font-size: 3rem;
         font-weight: 500;
     }
@@ -222,6 +227,7 @@ nav {
     color: #fff;
     height: 100vh;
     padding: 2rem 0;
+    margin: 3rem 0;
 }
 
 .experience {
@@ -307,7 +313,6 @@ nav {
         }
         h6 {
             font-size: 1.25rem;
-            font-family: 'Jost';
             font-weight: 500;
         }
     }
@@ -328,9 +333,6 @@ nav {
     padding: 3rem 1rem;
     border-radius: 10px;
     margin: 2rem 0;
-    a {
-        font-family: 'Jost';
-    }
     h6 {
         font-size: 1rem;
     }
@@ -391,8 +393,8 @@ footer {
         border-bottom: 2px solid #fff;
         padding: 2rem 0;
         p {
-            font-family: "Jost";
             font-size: 0.85rem;
+            margin-top: 1rem;
         }
         ul {
             margin-top: 1.5rem;
@@ -432,21 +434,19 @@ footer {
 }
 
 .about {
-    padding: 3rem 0;
-    margin-top: 6rem;
+    margin-top: 5rem;
     padding: 3rem 0;
     h1 {
+        margin-bottom: 1rem;
         font-size: 3rem;
     }
     h3 {
-        font-family: $fontf;
         font-size: 2rem;
         text-align: center;
         font-weight: 500;
     }
     h4 {
         font-size: 2rem;
-        font-family: $fontf;
         font-weight: 500;
     }
     h6 {
@@ -454,19 +454,16 @@ footer {
         font-size: 1rem;
         font-weight: 500;
     }
-    p {
-        font-family: $fontf;
-    }
     .aboutp {
         font-size: 0.7rem;
         width: 50%;
     }
-    img {
-        width: 100%;
-        height: 500px;
-        margin: 2rem 0;
+    .about-img {
+        margin: 2rem auto;
+        border-radius: 10px;
         object-fit: cover;
-        object-position: center;
+        height: 400px;
+        width: 100%;
     }
     span {
         color: $blue-color;
@@ -501,7 +498,7 @@ footer {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             place-items: center;
-            gap: 1rem;
+            gap: 2rem;
             margin-top: 2rem;
             .member {
                 width: 310px;
@@ -512,6 +509,7 @@ footer {
                     height: 80%;
                     width: 100%;
                     margin: 0;
+                    object-fit: cover;
                 }
                 .text {
                     display: flex;
@@ -641,6 +639,7 @@ footer {
             width: 100%;
             height: 400px;
             object-fit: contain;
+            margin: 1rem 0;
         }
     }
 }
@@ -715,7 +714,7 @@ footer {
     }
     .menu-btn {
         svg {
-            color: #fff;
+            color: #000;
         }
     }
     .navbar {
@@ -842,7 +841,7 @@ footer {
         }
         .image {
             img {
-                height: 350px;
+                height: 300px;
             }
         }
     }
@@ -885,7 +884,26 @@ footer {
     .engine {
         padding: 10px 10px 1rem;
         h4 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
+        }
+        h6 {
+            font-size: 0.8rem;
+        }
+    }
+    .about {
+        h1 {
+            line-height: 3.5rem;
+        }
+        h3 {
+            font-size: 1755rem;
+        }
+        .aboutp {
+            width: 90%;
+        }
+        .team {
+            h4 {
+                font-size: 1.75rem;
+            }
         }
     }
     footer {
