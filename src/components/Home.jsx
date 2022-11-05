@@ -31,7 +31,7 @@ const Home = () => {
               </span>
             </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elitmolestiae a maiore hic sint ipsa sed quia. Ipsum recusandae vel, quod aperiam iure animi ducimus.
+            Nebo Ventures is a fully featured US bank account for non-US residents (Africans) and its deposit is fully protected by US government’s Federal Deposit Insurance Corporation (FDIC)
             </p>
             <button className='btn btn-blue'>
               Get Started
