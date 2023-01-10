@@ -69,14 +69,47 @@ const Blog = () => {
               <div className="mission-text">
                 <h4>Our <span>mission</span></h4>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ipsa ducimus. Itaque repudiandae animi sunt fugiat delectus totam adipisci non quia corporis, unde, temporibus, ea perspiciatis impedit! Qui sed aperiam maxime optio libero. Hic itaque provident perferendis? Minima, commodi pariatur.
+                  To become a microfinance bank that understands and meets both Personal and business needs of the common people right at the Grassroots with a highly motivated and enthusiastic staff. 
                 </p>
               </div>
+              <br />
+              <br />
               <div className="mission-text">
                 <h4>Our <span>vision</span></h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ipsa ducimus. Itaque repudiandae animi sunt fugiat delectus totam adipisci non quia corporis, unde, temporibus, ea perspiciatis impedit! Qui sed aperiam maxime optio libero. Hic itaque provident perferendis? Minima, commodi pariatur.
-                </p>
+                <div className='vision-text'>
+                  <article>
+                    <h4>
+                      vision for employee
+                    </h4>
+                    <p>
+                    Providing decent employment for trustworthy, qualified citizens without bias, favouritism or tribalism.  
+                    </p>
+                  </article>
+                  <article>
+                    <h4>
+                      vision for country
+                    </h4>
+                    <p>
+                    Contributing immensely to providing employment to job seeker in reducing the unemployment rate with the mind for commensurate wages,and minding government legal obligations. 
+                    </p>
+                  </article>
+                  <article>
+                    <h4>
+                      vision for investors  
+                    </h4>
+                    <p>
+                    Ensuring standard with good profit delivery which investors can be proud of. 
+                    </p>
+                  </article>
+                  <article>
+                    <h4>
+                      vision for customers  
+                    </h4>
+                    <p>
+                    Maintaining outstanding service delivery with great competitiveness in pricing without compromising standard. 
+                    </p>
+                  </article>
+                </div>
               </div>
             </div>
           <div className="team">

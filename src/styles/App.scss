@@ -498,10 +498,16 @@ footer {
         }
     }
     .mission {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
         margin-top: 2rem;
+        max-width: 500px;
+    }
+    .vision-text {
+        h4 {
+            font-size: 1.5rem;
+        }
+        article {
+            margin: 1rem 0;
+        }
     }
     .team {
         margin-top: 3rem;

@@ -12,18 +12,21 @@ const Experience = () => {
   const items = [{
     id: 1,
     image: Img1 ,
-    name: 'micro and personal loan'
+    name: 'Contribution Collections',
+    text: 'We have seasoned,energetic and smart collectors who moves to client locations to collect our Contributions with proper recording and returns as requested on daily, weekly or monthly basis '
 
   },
   {
     id: 2,
     image: Img2 ,
-    name: 'business loan'
+    name: 'TRADE PARTNER  INVESTMENT',
+    text: 'Minimum start up cash investment of NGN500,000, over a minimum of two year period before withdrawal. However,after the two years,withdrawal is with a three months notice to The office via email,text message or hand written request before  payment. Note that interest on this is 20% p.a.'
   },
   {
     id: 3,
     image: Img6 ,
-    name: 'savings',
+    name: 'LOANS',
+    text: 'We offer various types of loans with varying interest rate including Staff loans,  Business Partner Loans, Community Loans, Asset Finance service loans. '
   },
   {
     id: 4,
@@ -71,7 +74,7 @@ const Experience = () => {
                         {item.name}
                       </h4>
                       <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis porro laboriosam sed unde, tempora a!
+                        {item.text}
                       </p>
                     </div>
                   </article>

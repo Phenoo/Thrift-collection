@@ -4,24 +4,24 @@ const Offers = () => {
 
   const items = [{
     id: 1,
-    name: 'Experience US banking at its finest',
-    text: 'With a free US checking account, you can pay for international tuition, accommodation, luxury vacation, send money to friends and family abroad, providing financial peace of mind to millions of people. FDIC - each depositor insured to at least $250,000 - Backed by the full faith and credit of the United States Government'
+    name: 'Great Leadership',
+    text: 'To catalyze clear and shared vision with great commitment and vigorous pursuit of customer, investor and employee satisfaction.'
 
   },
   {
     id: 2,
-    name: 'Gain entry to all borders',
-    text: 'Conveniently send and receive money in multiple currencies, make large payments for investment, pay mortgages, and other bills across all borders. Bird provides easy access to international banking and digital financial services for the 1 billion people on the emerging market.'
+    name: 'Innovative / Creativity',
+    text: 'Receptivity to ideas, giving room to creativity following with action is a path we follow'
   },
   {
     id: 3,
-    name: 'One app for all accounts',
-    text: 'Managing multiple accounts from a single app, saves you the trouble of carrying multiple cards, as well as the time and stress of navigating multiple mobile apps to complete any transaction.'
+    name: 'Discipline ',
+    text: 'Giving attention to details without removing from values makes us different'
   },
   {
     id: 4,
-    name: 'Checkout with Nebo Ventures',
-    text: 'You can integrate the BirdNet fast checkout controls into your website or app. It accepts local and international payments for businesses of all sizes.'
+    name: 'Tactical Excellency',
+    text: 'Creating environment for employees tp exercise business action well to customer satisfaction.'
   },
 ]
 

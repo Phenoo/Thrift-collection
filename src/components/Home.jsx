@@ -31,7 +31,9 @@ const Home = () => {
               </span>
             </h2>
             <p>
-            Nebo Ventures is a fully featured US bank account for non-US residents (Africans) and its deposit is fully protected by US government’s Federal Deposit Insurance Corporation (FDIC)
+              Nebo Ascending Ventures is a thrifting contributions and money lending service business. We meet the little
+              petty cash needs that comes urgent at little at little interest for the customer to pay at convenience and spread
+              over a time or at a target date to soothe personal and business needs. 
             </p>
             <button className='btn btn-blue'>
               Get Started
