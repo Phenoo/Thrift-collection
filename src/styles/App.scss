@@ -236,7 +236,6 @@ nav {
         .item {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            place-items: center;
             gap: 1rem;
             margin: 1rem 0;
             p {
