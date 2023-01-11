@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from './Logo'
 
-import {FaLinkedin, FaTwitter, FaFacebook} from 'react-icons/fa'
+import {FaLinkedin, FaTwitter, FaFacebook, FaPhone, FaMapMarker} from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -12,7 +12,9 @@ const Footer = () => {
             <div className="foot">
               <Logo />
               <p>
-              Bird is an international banking app that offers to non-US residents and businesses a fully featured US-domiciled, FDIC insured bank account with debit cards, international and local transfers, wealth building account, payment consolidation and a checkout solution.
+                Nebo Ascending Ventures is a thrifting contributions and money lending service business. We meet the little
+                petty cash needs that comes urgent at little interest for the customer to pay at convenience and spread
+                over a time or at a target date to soothe personal and business needs. 
               </p>
             </div>
             <div className="foot">
@@ -26,25 +28,6 @@ const Footer = () => {
                 <li>
                 Wealth Building Account
                 </li>
-                <li>
-                Cross-border & Local Transfer
-                </li>
-                <li>
-                Account Consolidation
-                </li>
-                <li>
-                  Bird Checkout
-                </li>
-              </ul>
-            </div>
-            <div className='foot'>
-              <h6>
-                help
-              </h6>
-              <ul>
-                <li>payment</li>
-                <li>shipping</li>
-                <li>exchange and returns</li>
               </ul>
             </div>
             <div className="foot">
@@ -57,23 +40,46 @@ const Footer = () => {
                 <li>privacy policy</li>
               </ul>
             </div>
+            <div className="foot">
+              <h6>
+                Contact us
+              </h6>
+              <div className='social'>
+                <ul>
+                  <li>
+                    <FaLinkedin />
+                  </li>
+                  <li>
+                    <FaTwitter />
+                  </li>
+                  <li>
+                    <FaFacebook />
+                  </li>
+                </ul>
+              </div>
+              <div className="flex">
+                <span>
+                  <FaPhone />
+                </span>
+                <span>
+                  <p>
+                    08034868862
+                  </p>
+                </span>
+              </div>
+              <div className="flex">
+                <span>
+                  <FaMapMarker />
+                </span>
+                <span>
+                  Adelodun Plaza, Phase II, Suite 2/13, Agbara road, Atan Ota, Ogun State.
+                </span>
+              </div>
+            </div>
           </div>
           <div className='bottom'>
             <div>
               <p>&copy; 2022. All rights reserved</p>
-            </div>
-            <div className='social'>
-              <ul>
-                <li>
-                  <FaLinkedin />
-                </li>
-                <li>
-                  <FaTwitter />
-                </li>
-                <li>
-                  <FaFacebook />
-                </li>
-              </ul>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaLinkedin, FaTwitter, FaFacebook} from 'react-icons/fa'
+import {FaLinkedin, FaTwitter, FaFacebook, FaMapMarker, } from 'react-icons/fa'
 import Img from '../assets/shake.jpeg'
 const Contact = () => {
   return (
@@ -10,6 +10,15 @@ const Contact = () => {
           <p>
             Hate forms? Send us an email instead. Or contact us on social media.
           </p>
+          <div className="flex">
+            <span>
+              <FaMapMarker />
+            </span>
+            <span>
+              Adelodun Plaza, Phase II, Suite 2/13, Agbara road, Atan Ota, Ogun State.
+            </span>
+          </div>
+          <br />
           <ul>
           <li>
               <FaLinkedin />

@@ -1,6 +1,6 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
-import Img1 from '../assets/homebg.jpeg'
+import Img1 from '../assets/home.jpg'
 
 
 const Home = () => {
@@ -32,7 +32,7 @@ const Home = () => {
             </h2>
             <p>
               Nebo Ascending Ventures is a thrifting contributions and money lending service business. We meet the little
-              petty cash needs that comes urgent at little at little interest for the customer to pay at convenience and spread
+              petty cash needs that comes urgent at little interest for the customer to pay at convenience and spread
               over a time or at a target date to soothe personal and business needs. 
             </p>
             <button className='btn btn-blue'>
