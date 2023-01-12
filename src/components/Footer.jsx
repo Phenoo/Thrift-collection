@@ -19,19 +19,6 @@ const Footer = () => {
             </div>
             <div className="foot">
               <h6>
-                app features
-              </h6>
-              <ul>
-                <li>
-                  US Checking Account
-                </li>
-                <li>
-                Wealth Building Account
-                </li>
-              </ul>
-            </div>
-            <div className="foot">
-              <h6>
                 Support
               </h6>
               <ul>

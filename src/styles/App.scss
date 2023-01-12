@@ -23,7 +23,7 @@ body {
 
 a {
     text-decoration: none;
-    font-family: "Poppins";
+    font-family: "DM Sans";
     cursor: pointer;
     color: inherit;
 }
@@ -87,7 +87,7 @@ nav {
 
 .header {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     align-items: center;
     padding-top: 10px;
 }
@@ -118,7 +118,7 @@ nav {
     width: 100%;
     ul {
         display: flex;
-        gap: 1rem;
+        gap: 2rem;
     }
     a {
         text-transform: capitalize;
@@ -256,31 +256,30 @@ nav {
 .experience {
     padding: 2rem 0;
     .experience-container {
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
     .experience-best {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
-        margin: 3rem auto;
+        margin: 1rem auto;
         .item-card {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            place-items: center;
-            gap: 1rem;
             margin-top: 1rem;
-            height: auto;
             h4 {
                 font-size: 1.4rem;
                 margin-bottom: 5px;
                 text-transform: capitalize;
             }
             .image {
-                height: 100px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
             img {
-                width: 100%;
-                height: 100%;
+                margin: 0 auto;
+                width: 130px;
+                height: 100px;
             }
         }
     }
@@ -439,7 +438,7 @@ footer {
         ul {
             display: flex;
             flex-direction: row;
-            gap: 1rem;
+            gap: 1.5rem;
             margin-top: 1rem;
             svg {
                 font-size: 1.3rem;
@@ -447,9 +446,6 @@ footer {
         }
     }
     .bottom {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         margin-top: 1rem;
         text-align: center;
         p {
@@ -505,8 +501,8 @@ footer {
     .about-img {
         margin: 2rem auto;
         border-radius: 10px;
-        object-fit: cover;
         height: 400px;
+        object-fit: contain;
         width: 100%;
     }
     span {
@@ -533,7 +529,7 @@ footer {
     }
     .vision-text {
         h4 {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
         article {
             margin: 1rem 0;
@@ -769,7 +765,7 @@ footer {
     }
     .navbar {
         display: flex;
-        width: 60vw;
+        width: 65vw;
         height: 100vh;
         position: absolute;
         top: 0;
@@ -783,11 +779,14 @@ footer {
         z-index: 100;
         transition: width 0.5s ease;
         ul {
+            gap: 2rem;
             flex-direction: column;
+            margin-bottom: 3rem;
         }
         li {
             a {
-                font-size: 1.5rem;
+                margin-top: 1rem;
+                font-size: 1.4rem;
                 color: #000000;
             }
         }
@@ -829,6 +828,9 @@ footer {
 }
 
 @media screen and (max-width: 510px) {
+    .headline {
+        font-size: 1.75rem;
+    }
     .about {
         img {
             height: 400px;
@@ -838,6 +840,15 @@ footer {
         }
     }
     .offers {
+        .offers-cont {
+            .item {
+                grid-template-columns: 100%;
+                margin: 2rem 0;
+                p {
+                    margin: 0;
+                }
+            }
+        }
         article {
             grid-template-columns: 100%;
         }

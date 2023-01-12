@@ -8,7 +8,7 @@ const Offers = () => {
   const items = [{
     id: 1,
     name: 'Great Leadership',
-    text: 'To catalyze clear and shared vision with great commitment and vigorous pursuit of customer, investor and employee satisfaction.',
+    text: 'To catalyze clear and shared vision with great commitment and vigorous pursuit of customer, investor and employee satisfaction',
     image: Img1
   },
   {
@@ -26,7 +26,7 @@ const Offers = () => {
   {
     id: 4,
     name: 'Tactical Excellency',
-    text: 'Creating environment for employees tp exercise business action well to customer satisfaction.',
+    text: 'Creating environment for employees tp exercise business action well to customer satisfaction',
     image: Img4
   },
 ]
@@ -50,7 +50,7 @@ const Offers = () => {
                     <h4 className="headline">
                       {item.name}
                     </h4>
-                    <p>{item.text}</p>
+                    <p>{item.text}.</p>
                   </div>
                   <div className='image'>
                     <img src={item.image} alt="offers" />

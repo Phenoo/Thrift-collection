@@ -1,6 +1,6 @@
 import React from 'react'
 import Img1 from '../assets/handshake.jpeg'
-import Img2 from '../assets/homebg.jpeg'
+import Img2 from '../assets/home.jpg'
 
 import {FaArrowRight} from 'react-icons/fa'
 
@@ -13,7 +13,9 @@ const Blog = () => {
           The story behind our <br /> <span> our company</span>
         </h1>
         <p className='aboutp'>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe fuga mollitia possimus soluta vero eum sunt praesentium voluptatem pariatur dicta.
+        Nebo Ascending Ventures is a thrifting contributions and money lending service business. We meet the little
+              petty cash needs that comes urgent at little interest for the customer to pay at convenience and spread
+              over a time or at a target date to soothe personal and business needs. 
         </p>
         <section>
           <img src={Img2} alt="about" className="about-img" />
@@ -32,36 +34,24 @@ const Blog = () => {
                 <h6>
                 Customers
                 </h6>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
               </div>
               <div className="item">
                 <h4>99<span>%</span></h4>
                 <h6>
                 Customer satisfaction
                 </h6>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
               </div>
               <div className="item">
                 <h4>76<span>%</span></h4>
                 <h6>
                   Years over growth
                 </h6>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                </p>
               </div>
               <div className="item">
-                <h4>250<span>B</span></h4>
+                <h4>250<span>M</span></h4>
                 <h6>
                 Current money managed
                 </h6>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                </p>
               </div>
             </div>
           </div>
