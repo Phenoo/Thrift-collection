@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import { Link } from 'react-router-dom'
+import {  NavLink } from 'react-router-dom'
 import Logo from './Logo'
 import {FaBars, FaTimes} from 'react-icons/fa'
 
@@ -33,30 +33,27 @@ const Navigation = () => {
               }
             </div>
             <ul onClick={() => setNavbar(!navbar)} className='navanimate'>
-              <li>
-                <Link to='/'>
-                  home
-                </Link>
-              </li>
-              <li>
-                <Link to='/blog'>
-                  about
-                </Link>
-              </li>
-              <li>
-                <Link to='/contact'>
-                  contact us
-                </Link>
-              </li>
+                <li>
+                  <NavLink to='/'>
+                    home
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to='/about'
+                    className={({isActive}) => (isActive ? 'active' : '') }
+                  >
+                    about
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to='/contact'
+                    className={({isActive}) => (isActive ? 'active' : '') }
+                  >
+                    contact us
+                  </NavLink>
+                </li>
             </ul>
-            <div className="started-btn">
-              <button className="btn btn-blue">
-                sign up
-              </button>
-              <button className="btn btn-trans">
-                Sign in
-              </button>
-            </div>
+            
           </div>
           <button className='menu-btn' onClick={() => setNavbar(!navbar)}>
             {

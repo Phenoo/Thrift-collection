@@ -1,44 +1,25 @@
 import { Route, Routes } from 'react-router-dom';
 import './styles/App.scss';
-import Footer from './components/Footer';
-import Navigation from './components/Navigation';
-import Blog from './pages/Blog';
+import About from './pages/About';
+import Privacy from './pages/Privacy';
 import Contact from './pages/Contact';
 import Main from './pages/Main';
-import { useEffect } from 'react';
 
-import scrollreveal from 'scrollreveal'
 
 
 
 function App() {
-  useEffect(() => {
-    const sr = scrollreveal({
-      origin: "bottom",
-      distance: "80px",
-      duration: 2000,
-      reset: true
-    });
-    sr.reveal(
-      `
-      section,
-      `,
-      {
-        opacity: 0,
-        interval: 300
-      }
-    )
-  })
+
 
   return (
     <>
-      <Navigation />
+      
       <Routes>
         <Route exact path='/' element={<Main />} />
-        <Route path='blog' element={<Blog />} />
+        <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/privacy' element={<Privacy />} />
       </Routes>
-      <Footer />
     </>
   );
 }

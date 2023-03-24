@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Silkscreen&family=DM+Sans&family=Jost&family=Roboto&family=Montserrat&family=Open+Sans&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Silkscreen&family=DM+Sans&family=Jost&family=Inter&family=Montserrat&family=Open+Sans&family=Poppins&display=swap');
 //////////////////PARAMETERS////////////////////////////////
 $blue-color: #ff2222;
 $darkblue: #00008b;
@@ -33,27 +33,27 @@ ul {
 }
 
 p {
-    font-family: "Montserrat";
+    font-family: "Dm Sans";
     font-size: 0.9rem;
 }
 
 h1,
 h2 {
-    font-family: "DM Sans";
-    font-weight: 500;
+    font-family: "Inter";
+    font-weight: 600;
     text-transform: capitalize;
 }
 
 h3,
 h6,
 h4 {
-    font-family: "Outfit";
-    font-weight: 500;
+    font-family: "Inter";
+    font-weight: 600;
     text-transform: capitalize;
 }
 
 li {
-    font-family: 'Jost';
+    font-family: 'DM Sans';
 }
 
 input {
@@ -85,11 +85,15 @@ nav {
     z-index: 10;
 }
 
+.active{
+    color: $blue-color;
+}
 .header {
     display: flex;
     gap: 3rem;
     align-items: center;
     padding-top: 10px;
+    justify-content: space-between;
 }
 
 .logo {
@@ -114,23 +118,20 @@ nav {
     display: flex;
     gap: 1rem;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    padding: 1rem 0;
     ul {
         display: flex;
         gap: 2rem;
     }
     a {
-        text-transform: capitalize;
+        text-transform: uppercase;
         font-size: 1.1rem;
         font-weight: 500;
+        color: #111;
+        &:hover{
+            color: $blue-color;
+        }
     }
-}
-
-.started-btn {
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 .btn {
@@ -285,9 +286,15 @@ nav {
     }
 }
 
+.divider-home {
+    height: 1px;
+    width: 100%;
+    background: #000;
+}
+
 .target {
-    background: #020202;
-    color: #fff;
+    background: #fff;
+    color: #111;
     padding: 4rem 0;
     .target-container {
         display: grid;
@@ -303,78 +310,10 @@ nav {
     }
 }
 
-.faq {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem 0;
-    .sub {
-        font-size: 1rem;
-    }
-    .question {
-        padding: 1.5rem 0;
-        border-bottom: 1px solid #111;
-        cursor: pointer;
-        width: 700px;
-    }
-    .header {
-        display: flex;
-        justify-content: space-between;
-        gap: 1rem;
-        margin: 0 auto;
-        align-items: center;
-        .heading {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            width: 100%;
-        }
-        svg {
-            font-size: 1.4rem;
-        }
-        h5 {
-            font-weight: 500;
-            color: $blue-color;
-            font-size: 1.25rem;
-        }
-        h6 {
-            font-size: 1.25rem;
-            font-weight: 500;
-        }
-    }
-}
-
-.subscribe {
-    padding: 2rem 0;
-}
-
-.engine {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    text-align: center;
-    background: rgba(239, 210, 210, 0.5);
-    padding: 3rem 1rem;
-    border-radius: 10px;
-    margin: 2rem 0;
-    h6 {
-        font-size: 1rem;
-    }
-    h4 {
-        font-size: 2rem;
-    }
-    button {
-        margin-top: 1rem;
-    }
-}
 
 footer {
     background: #000;
     color: #fff;
-    margin-top: 2rem;
     li {
         cursor: pointer;
         text-transform: capitalize;
@@ -414,14 +353,13 @@ footer {
     }
     .footer-body {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
         border-top: 2px solid #fff;
         border-bottom: 2px solid #fff;
         padding: 2rem 0;
         p {
-            font-size: 0.85rem;
-            margin-top: 1rem;
+            font-size: 0.8rem;
         }
         ul {
             margin-top: 1.5rem;
@@ -495,15 +433,24 @@ footer {
         font-weight: 500;
     }
     .aboutp {
-        font-size: 0.7rem;
-        width: 50%;
+        font-size: 1rem;
+        width: 100%;
+        @media screen and (min-width: 800px) {
+            width: 70%;
+        }
     }
     .about-img {
-        margin: 2rem auto;
-        border-radius: 10px;
-        height: 400px;
-        object-fit: contain;
+        margin: 2rem 0;
+        height: 500px;
         width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        img{
+            object-fit: contain;
+            max-width: 100%;
+            border-radius: 10px;
+        }
     }
     span {
         color: $blue-color;
@@ -524,81 +471,36 @@ footer {
         }
     }
     .mission {
-        margin-top: 2rem;
-        max-width: 500px;
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        @media screen and (max-width: 700px) {
+            grid-template-columns: 100%;
+        }
+
     }
     .vision-text {
         h4 {
             font-size: 1.2rem;
+            font-weight: 600;
         }
         article {
             margin: 1rem 0;
         }
     }
-    .team {
-        margin-top: 3rem;
-        h4 {
-            text-align: center;
-        }
-        .team-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            place-items: center;
-            gap: 2rem;
-            margin-top: 2rem;
-            .member {
-                width: 310px;
-                height: 400px;
-                cursor: pointer;
-                transition: all 0.3s ease;
-                img {
-                    height: 80%;
-                    width: 100%;
-                    margin: 0;
-                    object-fit: cover;
-                }
-                .text {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding: 1rem;
-                    background: rgba(37, 26, 243, 0.1);
-                    h6 {
-                        font-size: 1.2rem;
-                    }
-                }
-                button {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background: #000;
-                    color: #fff;
-                    padding: 1rem;
-                    border-radius: 50%;
-                    transition: all 0.3s ease;
-                }
-                &:hover {
-                    transition: all 0.3s ease;
-                    transform: scale(0.9);
-                    button {
-                        background: $blue-color;
-                        transform: rotate(-45deg);
-                        transition: all 0.3s ease;
-                    }
-                }
-            }
-        }
-    }
 }
+
 
 //////////////////////CONTACT/////////////
 .request {
-    margin-top: 7rem;
+    margin-top: 20vh;
     .request-cont {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
         place-items: center;
+        margin: 4rem 0;
     }
     h4 {
         text-transform: capitalize;
@@ -620,7 +522,7 @@ footer {
             transition: all 0.3s ease;
             &:hover {
                 transition: all 0.3s ease;
-                opacity: 0.7;
+                opacity: 0.5;
             }
         }
     }
@@ -690,6 +592,12 @@ footer {
     }
 }
 
+/////////////PRIVACY/////////////////////
+.privacy{
+    min-height: 100vh;
+}
+
+
 //////////////////MEDIA QUERY/////////////////////
 @media screen and (max-width: 860px) {
     section {
@@ -758,14 +666,16 @@ footer {
         overflow: hidden;
         transition: width 0.5s ease;
     }
+
     .menu-btn {
+        z-index: 100;
         svg {
             color: #000;
         }
     }
     .navbar {
         display: flex;
-        width: 65vw;
+        width: 100vw;
         height: 100vh;
         position: absolute;
         top: 0;
@@ -774,7 +684,7 @@ footer {
         justify-content: right;
         align-items: flex-start;
         gap: 3rem;
-        padding: 2rem;
+        padding:  2rem;
         background: #fff;
         z-index: 100;
         transition: width 0.5s ease;
@@ -832,11 +742,12 @@ footer {
         font-size: 1.75rem;
     }
     .about {
+        h1{
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
         img {
             height: 400px;
-        }
-        .mission {
-            grid-template-columns: 100%;
         }
     }
     .offers {
@@ -893,9 +804,6 @@ footer {
         h2 {
             font-size: 2.3rem;
         }
-        p {
-            font-size: 0.8rem;
-        }
         .image {
             img {
                 height: 300px;
@@ -912,9 +820,6 @@ footer {
             .item-text {
                 h4 {
                     font-size: 2rem;
-                }
-                p {
-                    font-size: 0.8rem;
                 }
             }
             .item-image {

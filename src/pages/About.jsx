@@ -1,25 +1,23 @@
 import React from 'react'
-import Img1 from '../assets/handshake.jpeg'
-import Img2 from '../assets/home.jpg'
+import Layout from '../components/Layout'
 
-import {FaArrowRight} from 'react-icons/fa'
 
-const Blog = () => {
+const About = () => {
   return (
-    <>
+    <Layout>
       <div className='about black'>
       <section>
         <h1>
           The story behind our <br /> <span> our company</span>
         </h1>
         <p className='aboutp'>
-        Nebo Ascending Ventures is a thrifting contributions and money lending service business. We meet the little
+              Nebo Ascending Ventures is a thrifting contributions and money lending service business. We meet the little
               petty cash needs that comes urgent at little interest for the customer to pay at convenience and spread
               over a time or at a target date to soothe personal and business needs. 
         </p>
-        <section>
-          <img src={Img2} alt="about" className="about-img" />
-        </section>
+        <div className='about-img'>
+          <img src="https://img.freepik.com/free-photo/shallow-focus-african-female-seller-showing-content-phone-customer-market_181624-35839.jpg?size=626&ext=jpg&ga=GA1.2.1511158469.1679620319&semt=ais" alt="about"  />
+        </div>
       </section>
       </div>
       <div className="about">
@@ -30,7 +28,7 @@ const Blog = () => {
             </h3>
             <div className="grid">
               <div className="item">
-                <h4>800<span>K</span></h4>
+                <h4>1000<span></span></h4>
                 <h6>
                 Customers
                 </h6>
@@ -58,12 +56,11 @@ const Blog = () => {
           <div className="mission">
               <div className="mission-text">
                 <h4>Our <span>mission</span></h4>
+                <br />
                 <p>
                   To become a microfinance bank that understands and meets both Personal and business needs of the common people right at the Grassroots with a highly motivated and enthusiastic staff. 
                 </p>
               </div>
-              <br />
-              <br />
               <div className="mission-text">
                 <h4>Our <span>vision</span></h4>
                 <div className='vision-text'>
@@ -102,59 +99,10 @@ const Blog = () => {
                 </div>
               </div>
             </div>
-          <div className="team">
-            <h4>
-            The amazing team behind <br /> <span>our company</span>
-            </h4>
-            <div className="team-container">
-              <div className="member">
-                <img src={Img1} alt='item' />
-                <div className='text'>
-                  <div>
-                  <h6>Sarah Roshi</h6>
-                  <p>Chief Inspection Officer</p>
-                  </div>
-                  <div>
-                    <button>
-                      <FaArrowRight />
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className="member">
-                <img src={Img1} alt='item' />
-                <div className='text'>
-                  <div>
-                  <h6>Sarah Roshi</h6>
-                  <p>Chief Inspection Officer</p>
-                  </div>
-                  <div>
-                    <button>
-                      <FaArrowRight />
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className="member">
-                <img src={Img1} alt='item' />
-                <div className='text'>
-                  <div>
-                  <h6>Sarah Roshi</h6>
-                  <p>Chief Inspection Officer</p>
-                  </div>
-                  <div>
-                    <button>
-                      <FaArrowRight />
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
       </div>
-    </>
+    </Layout>
   )
 }
 
-export default Blog
+export default About

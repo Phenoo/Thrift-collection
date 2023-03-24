@@ -1,21 +1,20 @@
 import React from 'react'
 import Home from '../components/Home'
 import Experience from '../components/Experience'
-import Faq from '../components/Faq'
 import Offers from '../components/Offers'
 import Customers from '../components/Customers'
-import Subscribe from '../components/Subscribe'
+import Layout from '../components/Layout'
+
 
 const Main = () => {
   return (
-    <>
+    <Layout>
       <Home />
       <Offers />
       <Experience />
+      <div className="divider-home" />
       <Customers />
-      <Faq />
-      <Subscribe />
-    </>
+    </Layout>
   )
 }
 

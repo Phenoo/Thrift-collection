@@ -1,7 +1,8 @@
 import React from 'react'
 import Logo from './Logo'
+import { Link } from 'react-router-dom'
 
-import {FaLinkedin, FaTwitter, FaFacebook, FaPhone, FaMapMarker} from 'react-icons/fa'
+import {FaInstagram, FaTwitter, FaFacebook, FaPhone, FaMapMarker} from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -11,6 +12,7 @@ const Footer = () => {
           <div className="footer-body">
             <div className="foot">
               <Logo />
+              <br />
               <p>
                 Nebo Ascending Ventures is a thrifting contributions and money lending service business. We meet the little
                 petty cash needs that comes urgent at little interest for the customer to pay at convenience and spread
@@ -22,9 +24,16 @@ const Footer = () => {
                 Support
               </h6>
               <ul>
-                <li>License</li>
-                <li>terms & condition</li>
-                <li>privacy policy</li>
+                <li>
+                 <Link to='/privacy'>
+                  Terms and Conditions
+                 </Link>        
+                </li>
+                <li>
+                  <Link to='/privacy'>
+                    privacy policy
+                  </Link>
+                </li>
               </ul>
             </div>
             <div className="foot">
@@ -34,13 +43,19 @@ const Footer = () => {
               <div className='social'>
                 <ul>
                   <li>
-                    <FaLinkedin />
+                    <a href="https://instagram.com/neboav?igshid=YmMyMTA2M2Y">
+                      <FaInstagram />
+                    </a>
                   </li>
                   <li>
-                    <FaTwitter />
+                    <a href="https://www.facebook.com/neboascending.ventures?mibextid=ZbWKwL">
+                      <FaFacebook />
+                    </a>
                   </li>
                   <li>
-                    <FaFacebook />
+                    <a href="https://twitter.com/NeboVentures?t=prR4tuUned3z8WIJgLFiRQ&s=09">
+                      <FaTwitter />
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -48,19 +63,17 @@ const Footer = () => {
                 <span>
                   <FaPhone />
                 </span>
-                <span>
                   <p>
                     08034868862
                   </p>
-                </span>
               </div>
               <div className="flex">
                 <span>
                   <FaMapMarker />
                 </span>
-                <span>
+                <p>
                   Adelodun Plaza, Phase II, Suite 2/13, Agbara road, Atan Ota, Ogun State.
-                </span>
+                </p>
               </div>
             </div>
           </div>

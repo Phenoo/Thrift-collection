@@ -1,6 +1,6 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
-import Img1 from '../assets/home.jpg'
+import { Link } from 'react-router-dom'
 
 
 const Home = () => {
@@ -36,11 +36,13 @@ const Home = () => {
               over a time or at a target date to soothe personal and business needs. 
             </p>
             <button className='btn btn-blue'>
-              Get Started
+              <Link to='/contact'>
+                Get Started            
+              </Link>
             </button>
           </div>
           <div className="image">
-            <img src={Img1} alt="home" />
+          <img src="https://img.freepik.com/free-photo/shallow-focus-african-female-seller-showing-content-phone-customer-market_181624-35839.jpg?size=626&ext=jpg&ga=GA1.2.1511158469.1679620319&semt=ais" alt="about"  />
           </div>
 
         </div>
