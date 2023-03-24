@@ -85,9 +85,10 @@ nav {
     z-index: 10;
 }
 
-.active{
+.active {
     color: $blue-color;
 }
+
 .header {
     display: flex;
     gap: 3rem;
@@ -128,7 +129,7 @@ nav {
         font-size: 1.1rem;
         font-weight: 500;
         color: #111;
-        &:hover{
+        &:hover {
             color: $blue-color;
         }
     }
@@ -310,7 +311,6 @@ nav {
     }
 }
 
-
 footer {
     background: #000;
     color: #fff;
@@ -446,7 +446,7 @@ footer {
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
-        img{
+        img {
             object-fit: contain;
             max-width: 100%;
             border-radius: 10px;
@@ -478,7 +478,6 @@ footer {
         @media screen and (max-width: 700px) {
             grid-template-columns: 100%;
         }
-
     }
     .vision-text {
         h4 {
@@ -490,7 +489,6 @@ footer {
         }
     }
 }
-
 
 //////////////////////CONTACT/////////////
 .request {
@@ -593,10 +591,26 @@ footer {
 }
 
 /////////////PRIVACY/////////////////////
-.privacy{
+.privacy {
     min-height: 100vh;
+    .headline {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #111;
+        text-transform: capitalize;
+        @media screen and (max-width: 860px) {
+            font-size: 1.7rem;
+        }
+    }
+    .grey {
+        color: gray;
+    }
+    .tophead {
+        text-transform: uppercase;
+        font-size: 1rem;
+        opacity: 0.6;
+    }
 }
-
 
 //////////////////MEDIA QUERY/////////////////////
 @media screen and (max-width: 860px) {
@@ -666,7 +680,6 @@ footer {
         overflow: hidden;
         transition: width 0.5s ease;
     }
-
     .menu-btn {
         z-index: 100;
         svg {
@@ -684,7 +697,7 @@ footer {
         justify-content: right;
         align-items: flex-start;
         gap: 3rem;
-        padding:  2rem;
+        padding: 2rem;
         background: #fff;
         z-index: 100;
         transition: width 0.5s ease;
@@ -742,7 +755,7 @@ footer {
         font-size: 1.75rem;
     }
     .about {
-        h1{
+        h1 {
             font-size: 2rem;
             margin-top: 2rem;
         }
